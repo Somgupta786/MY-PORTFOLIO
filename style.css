@@ -16,7 +16,7 @@
 }
 #home{
     /* background-color: #A1A1A1; */
-    width:1200px;
+   max-width:1200px;
     margin:0 auto;
    
  
@@ -36,23 +36,23 @@
     margin-left: -15%;
     /* margin-top: 40px; */
   
-    width: 20px;
+    width: 1.4rem;
     transform: scale(1);
     height: 45px;
     /* position: relative; */
-    position: fixed;
+    /* position: fixed; */
     
    
      
 }
 .first img{
-    width: 50px;
+    max-width: 50px;
     height: 50px;
     
     
     }
     .last img{
-        width: 50px;
+        max-width: 50px;
         height: 50px;
      
          
@@ -217,16 +217,38 @@ align-items: center;
     transform: scaleX(1);
   }
   .btn-pink:hover {
-    border: solid 3px var(--bgOrange);
+    border: solid 3px rgb(204, 58, 58);
     color: black;
   }
+@media (max-width:900px){
+.nav-right
+{
+    margin-left: 5%;
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
   .project-section{
     background-color: rgb(231,231,231);
     margin-top:4rem;
   }
 
   .page-header{
-    color:var(--bgOrange);
+    color:rgb(204, 58, 58);
     font-size:90px;
     text-align:center;
     padding-top:30px;
@@ -370,7 +392,7 @@ align-items: center;
   }
 
   .icon:hover{
-    color:var(--bgOrange);
+    color:rgb(204, 58, 58);;
   }
 
   .project-card:hover .project-content{
@@ -400,7 +422,7 @@ align-items: center;
     .skills-container{
       flex-wrap: wrap;
     }
-.faded-text{
+.skill-fade-text{
   font-size: 3em;
   left: 10%;
   bottom: 10%;
@@ -410,7 +432,7 @@ align-items: center;
     }
     .page-header {
       padding-top: 30px;
-      color: var(--bgOrange);
+      color: rgb(204, 58, 58);;
       text-align: center;
       font-size: 40px;
     }
@@ -528,7 +550,7 @@ align-items: center;
 .skill-heading{
   font-size:50px;
   font-style: bold;
-  color: var(--bgOrange);
+  color: rgb(204, 58, 58);;
   line-height: 50px;
 }
 
@@ -550,7 +572,7 @@ align-items: center;
   }
 
   .page-header{
-    color:var(--bgOrange);
+    color:orangered;
     font-size:90px;
     text-align:center;
     padding-top:30px;
@@ -694,7 +716,7 @@ align-items: center;
   }
 
   .icon:hover{
-    color:var(--bgOrange);
+    color:orangered;
   }
 
   .project-card:hover .project-content{
@@ -718,8 +740,8 @@ align-items: center;
   }
 
   @media (max-width:900px) {
-    .nav-items{
-      display: none;
+    .nav-left{
+     flex-wrap: wrap;
     }
     .skills-container{
       flex-wrap: wrap;
@@ -734,7 +756,7 @@ align-items: center;
     }
     .page-header {
       padding-top: 30px;
-      color: var(--bgOrange);
+      color: orangered
       text-align: center;
       font-size: 40px;
     }
@@ -852,7 +874,7 @@ align-items: center;
 .skill-heading{
   font-size:50px;
   font-style: bold;
-  color: var(--bgOrange);
+  color: rgb(204, 58, 58);
   line-height: 50px;
 }
 
