@@ -14,6 +14,49 @@
     margin-right: 10%;
 
 }
+.nav-right{
+    display: flex;
+    justify-content: baseline;
+    margin-left: 15%;
+    transform: scale(1);
+    
+    
+}
+.nav-right:hover{
+    animation: animation 6s ease infinite ;
+}
+@keyframes animation{
+0%{
+    transform: scale(1);
+}
+50%{
+    transform: scale(1.1);
+}
+0%{
+    transform: scale(1);
+}
+
+}
+.first img{
+width: 50px;
+height: 50px;
+
+
+}
+.last img{
+    width: 50px;
+    height: 50px;
+ 
+     
+}
+.text{
+font-size: 30px;
+font-family: cursive;
+background-color: rgb(246, 243, 243);
+height: 50px;
+
+
+}
 .nav-left{
     display: flex;
     flex-direction: row-reverse;
@@ -42,7 +85,18 @@
     border: 2px solid black;
     background-image: url(../Images/userAsset/UserImage.png);
     object-fit: cover;
+  
+    
    
+}
+.hero-content{
+display: flex;
+flex-direction: column;
+gap: 20px;
+justify-content: center;
+align-items: center;
+
+
 }
 .hero-section-heading{
     font-size: 35px;
@@ -61,10 +115,32 @@
     margin-top: 1rem;
     width: 70%;
     font-weight: 500;
+    font-size:25px ;
+}
+span::before {
+    content: "CODER";
+    animation: animate infinite 3s;
+    padding-left: 10px;
+    color: #c0301d;
+}
+
+@keyframes animate {
+
+    0% {
+        content: "CODER";
+    }
+
+    50% {
+        content: "DEVELOPER";
+    }
+
+    75% {
+        content: "PROGRAMMER";
+    }
 }
 
 .btn-pink {
-    background-color: var(--bgOrange);
+    background-color: rgb(204, 58, 58);
     width: fit-content;
     
     color: white;
