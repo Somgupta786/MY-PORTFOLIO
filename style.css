@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "Be Vietnam Pro", sans-serif;
     scroll-behavior: smooth;
+    user-select: text;
  
 }
 .wrapper{
@@ -13,7 +14,9 @@
     width: 100%;
     overflow-y:auto;
     overflow-x: hidden;
-   
+    background-image: url(https://th.bing.com/th/id/R.bfa48e1ea39a252013476ea698bb9dac?rik=LK%2bWZgPt6jdiig&riu=http%3a%2f%2fwallpapers.net%2fweb%2fwallpapers%2fspot-light-background-hd-wallpaper%2fthumbnail%2flg.jpg&ehk=nOoAgxgt%2f0NdJCNe7FcIfAirBgd47dD9qk223t99u9g%3d&risl=&pid=ImgRaw&r=0);
+  background-size: cover;
+   background-attachment: fixed;
 }
 #home{
     /* background-color: #A1A1A1; */
@@ -25,6 +28,8 @@
 }
 .fa-solid{
     position: fixed;
+    top: 7px;
+    right: 15px;
     font-weight: bold;
     
 }
@@ -39,7 +44,7 @@
 .nav-right{
     display: flex;
     justify-content: baseline;
-    margin-left: -15%;
+    margin-left: -12%;
     /* margin-top: 40px; */
   
     width: 1.4rem;
@@ -123,6 +128,7 @@ height: 50px;
     margin: 10px;
     animation: anim 6s ease infinite;
    
+   
 }
 
 @keyframes anim{
@@ -133,9 +139,12 @@ transform: scale(1);
     50%{
         transform: scale(1.1);
         box-shadow: 10px 10px 40px;
+        filter: grayscale(1);
+
     }
     100%{
         transform: scale(1);
+        
     }
 }
 .hero-content{
@@ -227,12 +236,13 @@ align-items: center;
     color: black;
   }
 @media (max-width:900px){
-.nav-right
-{
-    margin-left: 5%;
 
+.hero-center{
+height: 300px;
+width: 300px;
+border-radius: 50%;
+margin-top: 50px;
 }
-
 
 
 
@@ -422,6 +432,9 @@ align-items: center;
   }
 
   @media (max-width:900px) {
+    .skill-heading{
+      width: 100%;
+    }
     .nav-items{
      display: none;
     }
@@ -749,14 +762,8 @@ align-items: center;
     .nav-left{
      flex-wrap: wrap;
     }
-    .skills-container{
-      flex-wrap: wrap;
-    }
-.faded-text{
-  font-size: 3em;
-  left: 10%;
-  bottom: 10%;
-}
+    
+
 
     .hero-section{
       flex-wrap: wrap;
@@ -832,7 +839,8 @@ align-items: center;
 
 .skill-container-right{
   display:flex;
-  flex-wrap:wrap;
+  /* flex-wrap:wrap; */
+  
   width:50%;
   position:relative;
   gap:2rem;
@@ -851,9 +859,29 @@ align-items: center;
 }
 @media (max-width:900px) {
 .skill-fade-text{
-  font-size: 10em;
-  bottom:-3.5%;
+  visibility: hidden;
+  
+  
 
+}
+.skills-container{
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.skill-container-left{
+  
+  flex-grow: 1;
+  width: 100%;
+}
+.skill-container-right{
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.faded-text{
+  font-size: 3em;
+  left: 10%;
+  
 }
 }
 
@@ -916,11 +944,14 @@ width: 100%;
 font-size: 4em;
 color: orangered;
 padding-top: 5rem;
+padding-left: 10px;
+
 }
 .contactus-sub-heading{
   font-size: 2rem;
   color: #343d68aa;
   text-transform: capitalize;
+  padding-left: 10px;
 
   }
 .contactus-form-container{
